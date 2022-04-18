@@ -1,5 +1,5 @@
 import { animals, PrismaClient } from "@prisma/client";
-import React, { useState } from "react";
+import React from "react";
 import AnimalCard from "../../components/AnimalCard";
 
 const prisma = new PrismaClient();
@@ -13,7 +13,8 @@ export async function getServerSideProps() {
 }
 
 function index({ Initialanimal }) {
-  const [animal, setAnimal] = useState<animals[]>(Initialanimal);
+  //   const [animal, setAnimal] = useState<animals[]>(Initialanimal);
+  const animal: animals[] = Initialanimal;
   return (
     <div>
       <div className="grid grid-cols-3 mx-28 justify-items-center">
