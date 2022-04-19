@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 function Støts() {
@@ -7,16 +6,16 @@ function Støts() {
       <h1 className="text-center text-6xl text-white">Gør en forskel for alle</h1>
 
       <div className="flex justify-center gap-32 pt-20 text-3xl">
-        <div className="bg-white w-48 h-16 text-center flex justify-center">
-          <Link href="#">
-            <a className="self-center">Støt fast</a>
-          </Link>
-        </div>
-        <div className="bg-transparent border-2 w-[442px] h-16 text-center flex justify-center">
-          <Link href="#">
-            <a className="self-center text-white">Støt med enekelt donation</a>
-          </Link>
-        </div>
+        <button className="bg-white w-48 h-16 text-center flex justify-center hover:bg-black hover:text-white transition-color">
+          <a href="https://wwf.dk/kaemp-med-os/stoet-fast/" target="_blank" className="self-center">
+            Støt fast
+          </a>
+        </button>
+        <button className="bg-transparent border-2 w-[442px] h-16 text-center flex justify-center hover:bg-white hover:text-black transition-colors">
+          <a href="https://wwf.dk/stoet-med-enkeltdonation/" target="_blank" className="self-center text-white">
+            Støt med enekelt donation
+          </a>
+        </button>
       </div>
     </div>
   );
