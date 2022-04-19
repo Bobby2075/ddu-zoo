@@ -17,3 +17,11 @@ model animals {
   location String
   info String
 }
+
+model news {
+  id String @id @default(cuid())
+  author String
+  date String
+  image String
+  text String
+}
