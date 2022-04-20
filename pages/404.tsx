@@ -5,7 +5,7 @@ import Error from '../public/img/stinky.jpg'
 function Custom404() {
   return (
     <div>
-        <div className='relative h-64 w-64'>
+        <div className='relative h-64 w-64 flex justify-center'>
             <Image src={Error} layout="fill"/>
         </div>
 

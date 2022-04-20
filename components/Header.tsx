@@ -11,7 +11,7 @@ function Header() {
         <Image src={logo} layout="fill" />
       </div>
 
-      <h1 className=" ml-9 text-yellow-400">Animal Treasury</h1>
+      <Link href="/"><a><h1 className=" ml-9 text-yellow-400">Animal Treasury</h1></a></Link>
 
       <FiMenu className=" md:hidden" />
       <div className="ml-auto  space-x-14 hidden md:block">
