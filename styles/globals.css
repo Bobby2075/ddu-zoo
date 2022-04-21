@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mobile {
+  @apply border-b-2 border-yellow-400;
+}

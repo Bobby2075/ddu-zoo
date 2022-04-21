@@ -18,7 +18,7 @@ function index() {
       <News />
       <Brev />
 
-      <div className="relative w-full h-screen">
+      <div className="relative w-screen h-[50vh] lg:w-full lg:h-screen">
         <Image src={Monke} layout="fill" />
       </div>
 
