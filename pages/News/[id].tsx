@@ -9,18 +9,19 @@ export async function getStaticPaths() {
     return {
         paths: news.map((news) => ({
             params: {
-                id: news.id.toString(),
+                id: news.id,
             },
         })),
         fallback: false,
     };
 }
 
+
 export async function getStaticProps({params}) {
     const prisma = new PrismaClient();
     const news = await prisma.news.findUnique({
         where: {
-            id: Number(params.id)
+            id: String(params.id)
         },
     });
 

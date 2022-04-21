@@ -12,8 +12,8 @@ function Header() {
       </div>
 
       <Link href="/"><a><h1 className=" ml-9 text-yellow-400">Animal Treasury</h1></a></Link>
-
-      <FiMenu className=" md:hidden" />
+      
+      <FiMenu className=" md:hidden ml-auto" />
       <div className="ml-auto  space-x-14 hidden md:block">
         <Link href="/Dyrene">
           <a>Dyrene</a>
