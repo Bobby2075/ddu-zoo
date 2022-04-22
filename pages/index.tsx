@@ -38,7 +38,7 @@ function index({ initialContact }) {
     <div>
       <div className="relative w-screen h-96 lg:h-screen text-white">
         <Image src={Hero} layout="fill" />
-        <h1 className="text-5xl lg:text-9xl text-fill absolute py-20 lg:py-40 left-[20vw] lg:left-1/3">
+        <h1 className="text-5xl lg:text-9xl md:left-1/4 text-fill absolute py-20 lg:py-40 left-[20vw] lg:left-1/3">
           Red En Abe
         </h1>
         <button className="text-6xl absolute outline top-1/2 lg:top-2/3 left-[25vw] lg:left-[44vw]">
