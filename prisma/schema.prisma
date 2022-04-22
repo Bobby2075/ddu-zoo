@@ -25,3 +25,9 @@ model news {
   image String
   text String
 }
+
+model contacts {
+  id String @id @default(cuid())
+  mail String
+  name String
+}
