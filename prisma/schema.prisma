@@ -16,6 +16,7 @@ model animals {
   status Int
   location String
   info String
+  billed String
 }
 
 model news {
