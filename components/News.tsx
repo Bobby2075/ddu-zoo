@@ -19,11 +19,11 @@ function News() {
       </div>
       <div className="flex lg:hidden">
         <div className="relative w-[50vw] h-[50vh]">
-          <Image src={Panda} layout="fill" />
+          <Image src={Panda} layout="fill" className="object-cover" />
           <h1 className="absolute left-1/3 top-1/4 text-3xl font-bold text-yellow-400">I dag</h1>
         </div>
         <div className="relative w-[50vw] h-[50vh]">
-          <Image src={Elefant} layout="fill" />
+          <Image src={Elefant} layout="fill" className="object-cover" />
           <h1 className="absolute left-1/3 top-1/4 text-3xl font-bold text-yellow-400">I dag</h1>
         </div>
       </div>

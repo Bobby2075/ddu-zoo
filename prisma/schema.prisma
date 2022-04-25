@@ -24,7 +24,12 @@ model news {
   author String
   date String
   image String
-  text String
+  h1 String
+  h2 String
+  h3 String
+  text1 String
+  text2 String
+  text3 String
 }
 
 model contacts {

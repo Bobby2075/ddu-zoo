@@ -40,6 +40,7 @@ function index({ Initialanimal }) {
           </Link>
         ))}
       </div>
+      <img src="https://i0.wp.com/dzs.dk/wp-content/uploads/2015/12/20140421_Perry_with_Morlai.jpg?resize=1024%2C684&ssl=1" alt="" className="h-10 w-14" />
     </div>
   );
 }

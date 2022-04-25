@@ -1,7 +1,5 @@
 import { animals } from "@prisma/client";
-import Image from "next/image";
 import React from "react";
-import Monke from "../public/img/abe.png";
 
 interface AnimalCardProps {
   animal: animals;
@@ -21,7 +19,8 @@ function AnimalCard(props: AnimalCardProps) {
   return (
     <div className="text-center bg-yellow-400 text-white text-2xl space-y-5 mt-5">
       <div className="relative w-64 h-64">
-        <Image src={Monke} layout="fill" />
+        {/* <Image src={props.animal.billed} layout="fill" className="object-cover" /> */}
+        <img src={props.animal.billed} className="object-cover" />
       </div>
       <h1>{props.animal.animal}</h1>
       <h1>{props.animal.location}</h1>

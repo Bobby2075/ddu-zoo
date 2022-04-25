@@ -1,5 +1,5 @@
-import { animals, prisma, PrismaClient } from "@prisma/client";
-import React, { useState } from "react";
+import { animals, PrismaClient } from "@prisma/client";
+import React from "react";
 
 export async function getStaticPaths() {
   const Prisma = new PrismaClient();
@@ -35,9 +35,11 @@ function Details({ animal: animals }) {
     <>
       <div>
         <h1>Test</h1>
+        <img src={animals.billed} alt="" />
         <h1>{animals.id}</h1>
         <h1>{animals.animal}</h1>
         <h1>{animals.info}</h1>
+        <h1></h1>
       </div>
     </>
   );
