@@ -20,7 +20,7 @@ function Header() {
 
       <Link href="/">
         <a>
-          <h1 className=" ml-9 text-yellow-400">Animal Treasury</h1>
+          <h1 className=" ml-2 text-yellow-400">Animal Treasury</h1>
         </a>
       </Link>
 
