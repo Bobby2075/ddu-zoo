@@ -33,8 +33,17 @@ export async function getStaticProps({ params }) {
 function Articles({ news: news }) {
   return (
     <>
-      <div>{news.id}</div>
-      <img src={news.image} alt="" />
+      <div className="flex flex-col items-center mx-20 mb-5">
+        <p>{news.date}</p>
+        <h1 className="text-2xl">{news.title}</h1>
+        <div className="mt-3">
+          <img src={news.image} alt="" />
+        </div>
+        <h1 className="text-3xl mt-10">{news.h1}</h1>
+        <p className="text-center mt-2">{news.text1}</p>
+        <h2 className="text-3xl mt-10">{news.h2}</h2>
+        <p className="text-center mt-2">{news.text2}</p>
+      </div>
     </>
   );
 }

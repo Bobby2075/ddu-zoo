@@ -31,6 +31,7 @@ function index({ Initialanimal }) {
   const animal: animals[] = Initialanimal;
   return (
     <div className="py-5">
+      <h1 className="text-center text-2xl">Lær noget om de truede dyr</h1>
       <div className="grid grid-cols-3 mx-28 justify-items-center">
         {animal.map((animal) => (
           <Link href={"/Dyrene/" + animal.id} key={animal.id}>
@@ -40,7 +41,6 @@ function index({ Initialanimal }) {
           </Link>
         ))}
       </div>
-      <img src="https://i0.wp.com/dzs.dk/wp-content/uploads/2015/12/20140421_Perry_with_Morlai.jpg?resize=1024%2C684&ssl=1" alt="" className="h-10 w-14" />
     </div>
   );
 }

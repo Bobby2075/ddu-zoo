@@ -18,7 +18,7 @@ function index({ Initialnews }) {
     <div>
       <div className="space-y-5">
         <h1 className="text-center text-2xl">I dag</h1>
-        <div className="grid grid-cols-3 justify-items-center">
+        <div className="grid grid-cols-3 mx-28 justify-items-center">
           {news.map((news) => (
             <Link href={"/News/" + news.id} key={news.id}>
               <a>
@@ -29,9 +29,7 @@ function index({ Initialnews }) {
         </div>
       </div>
 
-      <div>
-        <h1>Sidste Uge</h1>
-      </div>
+      <div></div>
     </div>
   );
 }

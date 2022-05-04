@@ -30,16 +30,27 @@ export async function getStaticProps({ params }) {
   };
 }
 
+function findStatus(status: number) {
+  if (status === 1) {
+    return "Ikke truet";
+  } else if (status === 0) {
+    return "Truet";
+  } else {
+    return "oh oh stinky";
+  }
+}
+
 function Details({ animal: animals }) {
   return (
     <>
-      <div>
-        <h1>Test</h1>
-        <img src={animals.billed} alt="" />
-        <h1>{animals.id}</h1>
-        <h1>{animals.animal}</h1>
-        <h1>{animals.info}</h1>
-        <h1></h1>
+      <div className="flex flex-col items-center mx-20 mb-5">
+        <p>Lokation: {animals.location}</p>
+        <p>Status: {findStatus(animals.status)}</p>
+        <h1 className="text-2xl">{animals.animal}</h1>
+        <div className="mt-3">
+          <img src={animals.billed} alt="" />
+        </div>
+        <p className="text-center mt-2">{animals.info}</p>
       </div>
     </>
   );

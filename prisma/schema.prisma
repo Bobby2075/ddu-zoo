@@ -24,6 +24,7 @@ model news {
   author String
   date String
   image String
+  title String
   h1 String
   h2 String
   h3 String
