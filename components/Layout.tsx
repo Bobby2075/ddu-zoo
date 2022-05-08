@@ -7,7 +7,7 @@ function Layout({ children }) {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      <div className="flex-grow">{children}</div>
+      <div className="flex-grow font-body">{children}</div>
 
       <Footer />
     </div>

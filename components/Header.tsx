@@ -13,14 +13,14 @@ function Header() {
   }
 
   return (
-    <div className=" lg:mx-36 my-3 flex items-center text-3xl 2xl:text-4xl">
+    <div className=" lg:mx-36 my-3 flex items-center text-3xl 2xl:text-4xl font-display">
       <div className="relative h-20 w-16">
         <Image src={logo} layout="fill" />
       </div>
 
       <Link href="/">
         <a>
-          <h1 className=" ml-2 text-yellow-400">Animal Treasury</h1>
+          <h1 className="ml-2 text-yellow-400">Animal Treasury</h1>
         </a>
       </Link>
 
@@ -41,7 +41,7 @@ function Header() {
         <Link href="#">
           <a className="border-b-4 border-yellow-300">Støt Kampen</a>
         </Link>
-        <Link href="#">
+        <Link href="/omOs">
           <a>Om os</a>
         </Link>
       </div>

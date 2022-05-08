@@ -1,3 +1,5 @@
+import { contacts, Prisma } from "@prisma/client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
 import Brev from "../components/Brev";
@@ -6,7 +8,6 @@ import Støts from "../components/Støts";
 import Hero from "../public/img/abe.png";
 import Monke from "../public/img/lilleabe.png";
 
-import { Prisma, PrismaClient, contacts } from "@prisma/client";
 //const prisma = new PrismaClient();
 
 // export async function getServerSideProps() {
@@ -41,9 +42,16 @@ function index({ initialContact }) {
         <h1 className="text-5xl lg:text-9xl md:left-1/4 text-fill absolute py-20 lg:py-40 left-[20vw] lg:left-1/3">
           Red En Abe
         </h1>
-        <button className="text-6xl absolute border-4 top-1/2 lg:top-2/3 left-[25vw] lg:left-[44vw] text-yellow-400">
+        <motion.button
+          whileHover={{
+            scale: 1.2,
+            backgroundColor: "black",
+            color: "#facc15",
+          }}
+          className="text-6xl absolute border-4 top-1/2 lg:top-2/3 left-[25vw] lg:left-[44vw] text-yellow-400"
+        >
           Støt her
-        </button>
+        </motion.button>
       </div>
 
       <News />

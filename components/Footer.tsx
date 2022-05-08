@@ -7,7 +7,7 @@ import logo from "../public/img/logo-hvid.png";
 function Footer() {
   return (
     <>
-      <div className="bg-black text-white ">
+      <div className="bg-black text-white font-display ">
         <div className="mx-16 pt-6">
           <div className=" flex justify-between border-b-2 pb-36">
             <ul>
