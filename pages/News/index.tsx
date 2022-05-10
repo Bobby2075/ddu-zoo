@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import NewsCard from "../../components/NewsCard";
 import Thumbnail from "../../public/img/thumbnail.jpg";
+import video from "../../public/img/videothumb.png";
 
 export async function getServerSideProps() {
   const prisma = new PrismaClient();
@@ -42,6 +43,18 @@ function index({ Initialnews }) {
                 </div>
                 <h1 className="text-center text-2xl pt-5 text-white">
                   Animation
+                </h1>
+              </div>
+            </a>
+          </Link>
+          <Link href={"/News/video"}>
+            <a>
+              <div id="news container" className="w-64 h-96 bg-yellow-400">
+                <div className="relative w-auto h-64">
+                  <Image src={video} layout="fill" />
+                </div>
+                <h1 className="text-center text-2xl pt-5 text-white">
+                  Interview
                 </h1>
               </div>
             </a>
