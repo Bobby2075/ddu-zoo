@@ -1,5 +1,5 @@
-import ReactPlayer from "react-player/lazy";
 import React from "react";
+import ReactPlayer from "react-player/lazy";
 
 function animation() {
   return (
@@ -8,7 +8,7 @@ function animation() {
       <ReactPlayer
         url="https://youtu.be/LJbLeSSkhpc"
         controls={true}
-        height="500px"
+        height="100vh"
         width="100%"
       />
     </div>

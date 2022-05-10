@@ -43,13 +43,16 @@ function findStatus(status: number) {
 function Details({ animal: animals }) {
   return (
     <>
-      <div className="flex flex-col items-center mx-20 mb-5">
-        <p>Lokation: {animals.location}</p>
-        <p>Status: {findStatus(animals.status)}</p>
-        <h1 className="text-2xl">{animals.animal}</h1>
+      <div className="flex  items-center mx-20 mb-5 justify-between">
         <div className="mt-3">
           <img src={animals.billed} alt="" />
         </div>
+        <h1 className="text-2xl">{animals.animal}</h1>
+        <p>Status: {findStatus(animals.status)}</p>
+        <p>Lokation: {animals.location}</p>
+      </div>
+      <h1 className="text-4xl text-center font-display">Info</h1>
+      <div className=" mx-32 flex justify-center mb-10">
         <p className="text-center mt-2">{animals.info}</p>
       </div>
     </>

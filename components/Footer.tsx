@@ -9,26 +9,26 @@ function Footer() {
     <>
       <div className="bg-black text-white font-display ">
         <div className="mx-16 pt-6">
-          <div className=" flex justify-between border-b-2 pb-36">
+          <div className=" flex justify-between border-b-2 pb-36 text-2xl">
             <ul>
               <h1 className="text-4xl mb-5">Hjælp dyr</h1>
-              <li>bla</li>
-              <li>bla</li>
-              <li>bla</li>
+              <li>Doner fast</li>
+              <li>Doner enkelt</li>
+              <li>WFF</li>
             </ul>
 
             <ul>
               <h1 className="text-4xl mb-5">Om Animal Treasury</h1>
-              <li>bla</li>
-              <li>bla</li>
-              <li>bla</li>
+              <li>Om os</li>
+              <li>Nyheder</li>
+              <li>Dyrene</li>
             </ul>
 
             <ul>
               <h1 className="text-4xl mb-5">Mere info</h1>
-              <li>bla</li>
-              <li>bla</li>
-              <li>bla</li>
+              <li>WFF</li>
+              <li>Giveskud Zoo</li>
+              <li>IUCN-Red List</li>
             </ul>
           </div>
 
