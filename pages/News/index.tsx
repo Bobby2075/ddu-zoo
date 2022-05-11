@@ -21,7 +21,7 @@ function index({ Initialnews }) {
     <div>
       <div className="space-y-5">
         <h1 className="text-center text-2xl">I dag</h1>
-        <div className="grid grid-cols-3 mx-28 justify-items-center">
+        <div className=" flex flex-col md:grid grid-cols-3 mx-28 justify-center items-center md:justify-items-center">
           {news.map((news) => (
             <Link href={"/News/" + news.id} key={news.id}>
               <a>
@@ -34,7 +34,7 @@ function index({ Initialnews }) {
 
       <div className="space-y-5 mt-5 mx-28">
         <h1 className="text-center text-2xl">Sidste Uge</h1>
-        <div className="grid grid-cols-3 justify-items-center">
+        <div className="flex flex-col items-center  justify-center md:grid grid-cols-3 md:justify-items-center">
           <Link href={"/News/animation"}>
             <a>
               <div id="news container" className="w-64 h-96 bg-yellow-400">
@@ -42,7 +42,7 @@ function index({ Initialnews }) {
                   <Image src={Thumbnail} layout="fill" />
                 </div>
                 <h1 className="text-center text-2xl pt-5 text-white">
-                  Animation
+                  Truede dyrearter
                 </h1>
               </div>
             </a>
@@ -54,7 +54,7 @@ function index({ Initialnews }) {
                   <Image src={video} layout="fill" />
                 </div>
                 <h1 className="text-center text-2xl pt-5 text-white">
-                  Interview
+                  Interview om bevaresle af dyr
                 </h1>
               </div>
             </a>

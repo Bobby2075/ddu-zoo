@@ -32,7 +32,7 @@ function index({ Initialanimal }) {
   return (
     <div className="py-5">
       <h1 className="text-center text-2xl">Lær noget om de truede dyr</h1>
-      <div className="grid grid-cols-3 mx-28 justify-items-center">
+      <div className="flex flex-col items-center justify-center md:grid grid-cols-3 mx-28 justify-items-center">
         {animal.map((animal) => (
           <Link href={"/Dyrene/" + animal.id} key={animal.id}>
             <a>
